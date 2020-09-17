@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 400px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #333;
+  background-color: #f5f5f5; }
+  @media (max-width: 400px) {
+    body {
+      line-height: 1.6; } }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+img {
+  width: 100%; }
+
+ul {
+  list-style: none; }
+
+.btn__primary {
+  padding: 1rem 3rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2.4rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.4s; }
+  .btn__primary:hover {
+    background-color: #fff;
+    color: #333; }
+
+.btn__secondary {
+  padding: 1rem 3rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #33adff;
+  font-size: 2.4rem;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.4s; }
+  .btn__secondary:hover {
+    background-color: #1aa3ff; }
+
+.header {
+  height: 80vh;
+  background: url("../img/bg_header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 0 1rem;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  @media (max-width: 400px) {
+    .header {
+      height: 70vh;
+      background-attachment: scroll; } }
+  .header__heading {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    line-height: 1; }
+  .header__details {
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem; }
+
+.gallery {
+  padding: 6rem;
+  text-align: center; }
+  @media (max-width: 400px) {
+    .gallery {
+      padding: 3rem; } }
+  .gallery__heading {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    text-align: center; }
+  .gallery__images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 4.5rem; }
+    @media (max-width: 600px) {
+      .gallery__images {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 400px) {
+      .gallery__images {
+        grid-template-columns: 1fr; } }
+    .gallery__images--image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.4s; }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 900px) {
+    .about {
+      grid-template-columns: 1fr; } }
+  .about__content {
+    padding: 6rem;
+    background-color: #eee; }
+    @media (max-width: 400px) {
+      .about__content {
+        padding: 3rem; } }
+    .about__content--heading {
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-bottom: 2.5rem; }
+    .about__content--p1 {
+      margin-bottom: 2.5rem; }
+    .about__content--p2 {
+      margin-bottom: 2.5rem; }
+    .about__content--social {
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-bottom: 2.5rem; }
+    .about__content--icons {
+      display: flex; }
+    .about__content--icon {
+      margin-right: 1rem;
+      cursor: pointer;
+      transition: all 0.3s; }
+      .about__content--icon:hover {
+        color: #616161; }
+  .about__form {
+    padding: 6rem;
+    background-color: #e0e0e0; }
+    @media (max-width: 400px) {
+      .about__form {
+        padding: 3rem; } }
+    .about__form--heading {
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-bottom: 2.5rem; }
+    .about__form form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      @media (max-width: 600px) {
+        .about__form form {
+          grid-template-columns: 1fr; } }
+    .about__form--content {
+      margin-bottom: 1.5rem; }
+    .about__form--label {
+      margin-bottom: 1rem;
+      display: block;
+      font-weight: 400;
+      font-size: 2rem; }
+    .about__form--input {
+      outline: none;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      width: 90%;
+      border-radius: 3px; }
+      @media (max-width: 400px) {
+        .about__form--input {
+          width: 100%; } }
+    .about__form--textarea {
+      outline: none;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      width: 90%;
+      border-radius: 3px; }
+      @media (max-width: 400px) {
+        .about__form--textarea {
+          width: 100%; } }
+
+.footer {
+  padding: 6rem;
+  text-align: center;
+  color: #616161; }
+  .footer__link {
+    color: #1aa3ff;
+    border-bottom: 1px dotted #1aa3ff; }

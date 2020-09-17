@@ -1,0 +1,277 @@
+// Basic Styling
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 400px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #333;
+  background-color: #f5f5f5;
+
+  @media (max-width: 400px) {
+    line-height: 1.6;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+// Buttons
+
+.btn__primary {
+  padding: 1rem 3rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2.4rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  display: inline-block;
+
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: #fff;
+    color: #333;
+  }
+}
+.btn__secondary {
+  padding: 1rem 3rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #33adff;
+  font-size: 2.4rem;
+  border-radius: 3px;
+  display: inline-block;
+
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: #1aa3ff;
+  }
+}
+
+// Header Styling
+
+.header {
+  height: 80vh;
+  background: url("../img/bg_header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 0 1rem;
+
+  // position: relative;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: 400px) {
+    height: 70vh;
+    background-attachment: scroll;
+  }
+
+  &__heading {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+
+  &__details {
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+// Gallery Styling
+
+.gallery {
+  padding: 6rem;
+  text-align: center;
+
+  @media (max-width: 400px) {
+    padding: 3rem;
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 4.5rem;
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 400px) {
+      grid-template-columns: 1fr;
+    }
+
+    &--image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.4s;
+    }
+  }
+}
+
+// Section About Styling
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__content {
+    padding: 6rem;
+    background-color: #eee;
+
+    @media (max-width: 400px) {
+      padding: 3rem;
+    }
+
+    &--heading {
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+    }
+
+    &--p1 {
+      margin-bottom: 2.5rem;
+    }
+
+    &--p2 {
+      margin-bottom: 2.5rem;
+    }
+
+    &--social {
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+    }
+
+    &--icons {
+      display: flex;
+    }
+    &--icon {
+      margin-right: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #616161;
+      }
+    }
+  }
+
+  &__form {
+    padding: 6rem;
+    background-color: #e0e0e0;
+
+    @media (max-width: 400px) {
+      padding: 3rem;
+    }
+
+    &--heading {
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &--content {
+      margin-bottom: 1.5rem;
+    }
+
+    &--label {
+      margin-bottom: 1rem;
+      display: block;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+
+    &--input {
+      outline: none;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      width: 90%;
+      border-radius: 3px;
+
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+    }
+
+    &--textarea {
+      outline: none;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      width: 90%;
+      border-radius: 3px;
+
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//Footer Styling
+
+.footer {
+  padding: 6rem;
+  text-align: center;
+  color: #616161;
+
+  &__link {
+    color: #1aa3ff;
+    border-bottom: 1px dotted #1aa3ff;
+  }
+}
